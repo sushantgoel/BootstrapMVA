@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Bootstrap Components</h1>
+    <p class="lead">Here's an overview of some of the main Bootstrap components.</p>
+    <p><a href="http://getbootstrap.com/components/" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Groupings</h2>
+        <p>
+            For keeping stuff together.
+        </p>
+        <p>@Html.ActionLink("Groupings", "Groupings", "Home", null, new {@class = "btn btn-default"})</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Objects</h2>
+        <p>Cool stuff.</p>
+        <p>@Html.ActionLink("Objects", "Objects", "Home", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Nav</h2>
+        <p>For going back and forth between cool stuff.</p>
+        <p>@Html.ActionLink("Nav", "Nav", "Home", null, new { @class = "btn btn-default" })</p>
+    </div>
+</div>
