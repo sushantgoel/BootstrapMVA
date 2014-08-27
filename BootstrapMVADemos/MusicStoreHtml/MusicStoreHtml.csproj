@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AlbumDetails.html" />
+    <Content Include="Customization.html" />
+    <Content Include="Dialogs.html" />
     <Content Include="AlbumEntry.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -69,6 +71,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="GroupingData.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="packages.config" />
