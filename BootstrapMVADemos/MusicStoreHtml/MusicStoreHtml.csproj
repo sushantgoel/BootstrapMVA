@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AlbumDetails.html" />
+    <Content Include="Content\site.css" />
     <Content Include="Customization.html" />
     <Content Include="Dialogs.html" />
     <Content Include="AlbumEntry.html" />

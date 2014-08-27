@@ -67,13 +67,17 @@
 	<script>
 		$(function () {
 			$('#commit-changes').click(function () {
-				var alertHtml = '<div class="alert alert-success fade in" role="alert">'
-									+ '<strong>Changes saved</strong>'
-									+ '<div>You should see your changes reflected shortly.</div>'
-								+ '</div>';
-				$('#alert-container').append(alertHtml);
+				displayAlert('alert-success', 'Saved Correctly!', 'You have saved your changes.')
 			});
 		});
+
+		function displayAlert(type, title, message) {
+			var alertHtml = '<div class="alert fade in ' + type + '" role="alert">'
+								+ '<strong>' + title + '</strong>'
+								+ '<div>' + message + '</div>'
+							+ '</div>';
+			$('#alert-container').append(alertHtml);
+		}
 	</script>
 </body>
 </html>
