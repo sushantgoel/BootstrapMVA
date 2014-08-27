@@ -1,0 +1,101 @@
+﻿@import "bootstrap/variables";
+@import "bootstrap/grid";
+@import "bootstrap/utilities";
+@import "bootstrap/mixins";
+@import "bootstrap/forms";
+@import "bootstrap/navbar";
+@import "bootstrap/jumbotron";
+@import "bootstrap/buttons";
+@import "bootstrap/responsive-utilities";
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+nav {
+    .navbar;
+    .navbar-inverse;
+    .navbar-fixed-top;
+    > div { .container; }
+}
+
+section.main {
+    .container; 
+    .body-content;
+}
+
+article.album-overview {
+    .row;
+    img {
+        .make-md-column(2);
+        .hidden-xs;
+        .hidden-sm;
+    }
+    div {
+        .make-md-column(10);
+    }
+}
+
+section.album-details {
+    .row;
+    article.tracks {
+        .make-md-column(5);
+        .make-md-column-push(7);
+        div.track {
+            .row;
+            h3.title {
+                .make-md-column(8);
+                .make-xs-column(8);
+            }
+            h3.duration {
+                .make-md-column(4);
+                .make-xs-column(4);
+            }
+        }
+    }
+    article.review {
+        .make-md-column(7);
+        .make-md-column-pull(5);
+    }
+}
+
+section.banner {
+    .jumbotron;
+    a {
+        .btn; 
+        .btn-primary;
+        .btn-lg;
+    }
+}
+
+section.announcements {
+    .make-row;
+    article {
+        .make-md-column(4);
+        a {
+            .btn; 
+            .btn-default;
+        }
+    }
+}

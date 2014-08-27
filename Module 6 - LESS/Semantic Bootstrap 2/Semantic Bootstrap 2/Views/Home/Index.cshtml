@@ -1,0 +1,40 @@
+﻿@model Semantic_Bootstrap_2.Models.Album
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<section class="main">
+    <section class="banner">
+        <h1>Album Details</h1>
+    </section>
+
+    <article class="album-overview">
+        <img src="~/Images/Album.gif" />
+
+        <div>
+            <h1 class="blue">@Html.DisplayFor(model => model.Title)</h1>
+            <h2>@Html.DisplayFor(model => model.BandName)</h2>
+            <p>The band formed when they were young. As time went on they got older.</p>
+        </div>
+    </article>
+
+    <section class="album-details">
+        <article class="tracks">
+            <h2>Tracks</h2>
+            <div class="track">
+                <h3 class="title">
+                    Track One
+                </h3>
+                <h3 class="duration">
+                    3:05
+                </h3>
+            </div>
+        </article>
+        <article class="review">
+            <h2>Expert Review</h2>
+            <p>Bacon ipsum dolor sit amet doner shoulder ham hock bacon jowl ball tip pork belly flank landjaeger pancetta strip steak. Strip steak bacon short loin jowl flank pig kevin. Turkey sausage salami swine ham hock doner meatball corned beef. Leberkas t-bone pork chop beef ribs bresaola turkey cow landjaeger. Jerky jowl hamburger rump, shank pig tenderloin shankle. Spare ribs strip steak kevin, pork belly bresaola pig capicola. Pork chop andouille pork biltong fatback jerky strip steak prosciutto filet mignon pig spare ribs shank.</p>
+            <p>Salami strip steak kevin pork belly porchetta. Cow pork belly shank, swine kevin ground round pastrami pork chop filet mignon turkey. Biltong landjaeger sausage pancetta andouille sirloin shankle kielbasa ball tip ground round capicola leberkas beef ribs flank venison. Doner pastrami tri-tip ground round. Sirloin chuck ground round ham pork chop, short ribs chicken ham hock brisket kevin pig ball tip shoulder.</p>
+        </article>
+    </section>
+</section>
